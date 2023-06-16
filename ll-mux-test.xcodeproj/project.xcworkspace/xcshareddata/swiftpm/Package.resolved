@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swift-upload-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/muxinc/swift-upload-sdk",
+      "state" : {
+        "branch" : "main",
+        "revision" : "139354588c6dca8f7e0defe5f144361f2ba55bb7"
+      }
+    }
+  ],
+  "version" : 2
+}

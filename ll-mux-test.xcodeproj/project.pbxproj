@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630E3DA82A3D186C00499BBC /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630E3DA72A3D186C00499BBC /* VideoPicker.swift */; };
+		63BF56402A3C0C0900305CC6 /* MuxUploadSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 63BF563F2A3C0C0900305CC6 /* MuxUploadSDK */; };
 		63C0DC002981B07F00BA3ABC /* ll_mux_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0DBFF2981B07F00BA3ABC /* ll_mux_testApp.swift */; };
 		63C0DC022981B07F00BA3ABC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0DC012981B07F00BA3ABC /* ContentView.swift */; };
 		63C0DC042981B08000BA3ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C0DC032981B08000BA3ABC /* Assets.xcassets */; };
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		630E3DA72A3D186C00499BBC /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
 		63C0DBFC2981B07F00BA3ABC /* ll-mux-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ll-mux-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C0DBFF2981B07F00BA3ABC /* ll_mux_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ll_mux_testApp.swift; sourceTree = "<group>"; };
 		63C0DC012981B07F00BA3ABC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63BF56402A3C0C0900305CC6 /* MuxUploadSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +102,7 @@
 				63C0DC012981B07F00BA3ABC /* ContentView.swift */,
 				63C0DC032981B08000BA3ABC /* Assets.xcassets */,
 				63C0DC052981B08000BA3ABC /* Preview Content */,
+				630E3DA72A3D186C00499BBC /* VideoPicker.swift */,
 			);
 			path = "ll-mux-test";
 			sourceTree = "<group>";
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = "ll-mux-test";
+			packageProductDependencies = (
+				63BF563F2A3C0C0900305CC6 /* MuxUploadSDK */,
+			);
 			productName = "ll-mux-test";
 			productReference = 63C0DBFC2981B07F00BA3ABC /* ll-mux-test.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 63C0DBF32981B07F00BA3ABC;
+			packageReferences = (
+				63BF563E2A3C0C0900305CC6 /* XCRemoteSwiftPackageReference "swift-upload-sdk" */,
+			);
 			productRefGroup = 63C0DBFD2981B07F00BA3ABC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630E3DA82A3D186C00499BBC /* VideoPicker.swift in Sources */,
 				63C0DC022981B07F00BA3ABC /* ContentView.swift in Sources */,
 				63C0DC002981B07F00BA3ABC /* ll_mux_testApp.swift in Sources */,
 			);
@@ -577,6 +589,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63BF563E2A3C0C0900305CC6 /* XCRemoteSwiftPackageReference "swift-upload-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/muxinc/swift-upload-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63BF563F2A3C0C0900305CC6 /* MuxUploadSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63BF563E2A3C0C0900305CC6 /* XCRemoteSwiftPackageReference "swift-upload-sdk" */;
+			productName = MuxUploadSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63C0DBF42981B07F00BA3ABC /* Project object */;
 }
